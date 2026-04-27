@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `27/04/2026 - 15:52`
+Last Update `27/04/2026 - 16:46`
 
 ## Content Menu
 
@@ -25,7 +25,11 @@ Last Update `27/04/2026 - 15:52`
 
 ### Notes
 
-+ 
++ `Code`
+
+#### Installing Express
+
+....
 
 [Back to top](#content-menu)
 ### Links
