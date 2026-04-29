@@ -1,11 +1,11 @@
 # Express Project - Daily Quote App
 
-Last Update `27/04/2026 - 16:46`
+Last Update `29/04/2026 - 12:45`
 
 ## Content Menu
 
  [TODOS](#todos) | [Entry Point](#entry-point) | [Notes](#notes) | [Links](#links) | [Project](#project)
-[Notes](#notes)
+[Log](#log)
 
 [Back to Top](#)
 
@@ -27,6 +27,16 @@ Last Update `27/04/2026 - 16:46`
 
 + `Code`
 
+```text
+
+    Implement a Daily quote that will appear and change every 24 hours
+
+    The "New Quote" button on the same page should replace this quote with a random new quote, and author on each new button click.
+
+    The data for the daily and ramdom quote is found in quote_list_one.json 
+
+```
+
 #### Installing Express
 
 ....
@@ -42,5 +52,16 @@ Express Project Setup - to appear here
 
 + [URL](#https://projects.jonniegrieve.co.uk/express_project)
 + [Repository](#https://github.com/jg-digital-media/express_project)
+
+### Log
+
+#### `v1`
+
++ Stylesheet Update
++ Build includes JavaScript to handle quote requests, random quote generation and daily quote display
+
+#### `v1`
+
++ Initial build
 
 [Back to top](#content-menu)
