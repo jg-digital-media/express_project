@@ -1,6 +1,8 @@
 # Express Project - Daily Quote App
 
-Last Update `29/04/2026 - 14:56`
+Last Update `29/04/2026 - 16:27`
+
++ This is a daily quote app built with `Express.js` and `Node.js`.  Ir requires both to be installed on your local machine.  Use `npm install` in your CLI/Terminal to install the dependencies.
 
 ## Content Menu
 
@@ -8,16 +10,25 @@ Last Update `29/04/2026 - 14:56`
 
 ### Todos
 
-#### Tasks `6` Completed `1` 
+#### Tasks `10` Completed `2` 
 
-+ `TODO:` `COMPLETED: 27-04-2026` Plan UI by a wireframe
-+ `TODO:` Build static HTML fles
-  + `TODO:` Add copy for about app page `/about.php`
-  + `TODO:` Add reload button to restore the current daily Quote.
+##### Front End
+
++ `TODO: COMPLETED: 27-04-2026` Plan UI by a wireframe
++ `TODO: COMPLETED: 29-04-2026` Build static HTML fles
+  + `TODO: ` Add copy for about app page `/about.php`
+  + `TODO: ` Add reload button to restore the current daily Quote.
   
-+ `TODO:` Get and display current date dynamically with PHP
-+ `TODO:` Create a new local Node.js environment
++ `TODO: ` Get and display current date dynamically with PHP
++ `TODO: ` Create a new local Node.js environment
 
+##### Express.js
+
++ `TODO: ` Install Express
++ `TODO: ` Create a local server on port 3000  - http://localhost:3000
++ `TODO: ` Test a route with app.get
++ `TODO: ` Test planned application routes
++ Get a random quote on the home root `/`
 
 [Back to top](#content-menu)
 ### Entry Point
@@ -49,11 +60,30 @@ Last Update `29/04/2026 - 14:56`
 
 ```
 
+```text
+    in browse.php replace the current content with some of the data from quote_list_one.json.   
+
+    Display as many .quote---list--item elements as needed.  But for now keep all links as pointing to quote.php.  We're simulating an interaction at this point, not completing it. 
+
+```
+
+
 #### Installing Express
+
+
++ Ensure you have Node.js installed
+
++ Navigate to your project root directory
+
++ `npm init`
+
++ `npm install express`
+
 
 ....
 
 [Back to top](#content-menu)
+
 ### Links
 
 [Back to top](#content-menu)
