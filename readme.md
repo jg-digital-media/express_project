@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `29/04/2026 - 12:45`
+Last Update `29/04/2026 - 13:07`
 
 ## Content Menu
 
@@ -11,11 +11,16 @@ Last Update `29/04/2026 - 12:45`
 
 ### Todos
 
-#### Tasks `3` Completed `1` 
+#### Tasks `6` Completed `1` 
 
 + `TODO:` `COMPLETED: 27-04-2026` Plan UI by a wireframe
 + `TODO:` Build static HTML fles
+  + `TODO:` Add copy for about app page `/about.php`
+  + `TODO:` Add reload button to restore the current daily Quote.
+  
++ `TODO:` Get and display current date dynamically with PHP
 + `TODO:` Create a new local Node.js environment
+
 
 [Back to top](#content-menu)
 ### Entry Point
