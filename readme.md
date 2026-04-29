@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `29/04/2026 - 13:09`
+Last Update `29/04/2026 - 14:49`
 
 ## Content Menu
 
@@ -28,6 +28,11 @@ Last Update `29/04/2026 - 13:09`
 ### Notes
 [Back to Top](#)
 
++ `Overview`
+
+  + This application is a simple Daily Quote Application created in `Express.js`. It calculates a number based on today’s date (essentially how many days have passed since a fixed point in time), then uses that number to consistently pick the same quote for that specific day; displaying this quote on the homepage.
+
+  + We then have a button that will select a random quote and replace the "daily" quote until the page is reloaded.  The "Browse" page will display a list of all the quotes as retrieved dynamically from the JSON file.
 + `Code`
 
 . . . 
@@ -62,7 +67,7 @@ Express Project Setup - to appear here
 
 ### Log
 
-#### `v1`
+#### `v2`
 
 + Stylesheet Update
 + Build includes JavaScript to handle quote requests, random quote generation and daily quote display
