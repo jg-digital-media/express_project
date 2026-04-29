@@ -10,3 +10,11 @@ app.listen(3000, () => {
 app.get("/", (req, res) => {
   res.send("Hello from your Quote App!");
 });
+
+app.get("/browse", (req, res) => {
+  res.send("Quotes list page");
+});
+
+app.get("/browse/1", (req, res) => {
+  res.send("Single quote page");
+});
