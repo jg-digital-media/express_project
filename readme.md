@@ -1,13 +1,11 @@
 # Express Project - Daily Quote App
 
-Last Update `29/04/2026 - 13:07`
+Last Update `29/04/2026 - 13:08`
 
 ## Content Menu
 
  [TODOS](#todos) | [Entry Point](#entry-point) | [Notes](#notes) | [Links](#links) | [Project](#project)
 [Log](#log)
-
-[Back to Top](#)
 
 ### Todos
 
@@ -29,8 +27,13 @@ Last Update `29/04/2026 - 13:07`
 [Back to top](#content-menu)
 
 ### Notes
+[Back to Top](#)
 
 + `Code`
+
+. . . 
+
++ `Prompts`
 
 ```text
 
