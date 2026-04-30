@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `30/04/2026 - 11:08`
+Last Update `30/04/2026 - 11:24`
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -103,16 +103,36 @@ Last Update `30/04/2026 - 11:08`
 ```javascript
     app.get("/browse", (req, res) => {
 
-        res.send("Quotes list page");
+        let html = "<h1>All Quotes</h1>";
+
+        quotes.forEach(q => {
+            html += `<p><a href="/browse/${q.id}">${q.quote}</a></p>`;
+        });
+
+        html += `<a href="/">Back</a>`;
+
+        res.send(html);
+
     });
 ```
 
 #### Dynamic route for individual quote pages `/browse/1`
 
 ```javascript
-    app.get("/browse/1", (req, res) => {
+    app.get("/browse/:id", (req, res) => {
+        const quote = quotes.find(q => q.id == req.params.id);
 
-        res.send("Single quote page");
+        if (!quote) {
+            return res.send("Quote not found");
+        }
+
+        res.send(`
+            <h1>Quote</h1>
+            <blockquote>${quote.quote}</blockquote>
+            <p>- ${quote.author}</p>
+            <a href="/browse">Back</a>
+        `);
+
     });
 ```
 
