@@ -1,68 +1,80 @@
-[ {
+[ 
+    {
 
-    "quote": "Don't try to be a great man, just be a man. Let history make its own judgements.",
-    "author": "Harry Z Cochrane",   
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-1"
+        "id": 1,
+        "quote": "Don't try to be a great man, just be a man. Let history make its own judgments.",
+        "author": "Harry Z Cochrane",   
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-1"
 
-}, {
+    }, {
 
-    "quote": "Every expert was once a beginner.",
-    "author": "Author 2",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-2"
+        "id": 2,
+        "quote": "Every expert was once a beginner.",
+        "author": "Author 2",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-2"
 
-}, {
+    }, {
 
-    "quote": "Don't be afraid to break things — that's how you learn.",
-    "author": "Author 3",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-3"
+        "id": 3,
+        "quote": "Don't be afraid to break things — that's how you learn.",
+        "author": "Author 3",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-3"
 
-}, {
+    }, {
 
-    "quote": "Your code doesn't have to be perfect, just functional — perfection can come later.",
-    "author": "Author 4",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-4"
+        "id": 4,
+        "quote": "Your code doesn't have to be perfect, just functional — perfection can come later.",
+        "author": "Author 4",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-4"
 
-}, {
+    }, {
 
-    "quote": "Keep building. The logic will click with time.",
-    "author": "Author 5",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-5"
+        "id": 5,
+        "quote": "Keep building. The logic will click with time.",
+        "author": "Author 5",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-5"
 
-}, {
+    }, {
 
-    "quote": "You're not stuck — you're learning something new.",
-    "author": "Aurhor 6",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-6"
+        "id": 6,
+        "quote": "You're not stuck — you're learning something new.",
+        "author": "Aurhor 6",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-6"
 
-}, {
+    }, {
 
-    "quote": "Read error messages; they're clues, not criticism.",
-    "author": "Author 7",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-7"
+        "id": 7,
+        "quote": "Read error messages; they're clues, not criticism.",
+        "author": "Author 7",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-7"
 
-}, {
+    }, {
 
-    "quote": "Write code like your future self has to debug it.",
-    "author": "Author 8",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-8"
+        "id": 8,
+        "quote": "Write code like your future self has to debug it.",
+        "author": "Author 8",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-8"
 
-}, {
+    }, {
 
-    "quote": "Small wins in coding are still wins",
-    "author": "Author 9",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-9"
+        "id": 9,
+        "quote": "Small wins in coding are still wins",
+        "author": "Author 9",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-9"
 
-}, {
+    }, {
 
-    "quote": "The best way to learn to code is to keep coding.",
-    "author": "Author 10",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-10"
+        "id": 10,
+        "quote": "The best way to learn to code is to keep coding.",
+        "author": "Author 10",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-10"
 
-}, {
+    }, {
 
-    "quote": "Debugging is just problem-solving with extra steps.",
-    "author": "Author 11",
-    "url": "https://www.jonniegrieve.co.uk/quotes/quote-11"
+        "id": 11,
+        "quote": "Debugging is just problem-solving with extra steps.",
+        "author": "Author 11",
+        "url": "https://www.jonniegrieve.co.uk/quotes/quote-11"
 
-}
+    }
 ]
