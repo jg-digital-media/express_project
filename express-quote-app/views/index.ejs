@@ -28,9 +28,9 @@
 
         <nav>
 
-            <a href="index.php">Home</a>
-            <a href="browse.php">Browse</a>
-            <a href="about.php">About</a>
+            <a href="/">Home</a>
+            <a href="/browse">Browse</a>
+            <a href="/about">About</a>
 
         </nav>
 
@@ -44,13 +44,13 @@
 
             <h3>Today's Quote</h3>
 
-            <h4 id="quote-text" aria-live="polite">Loading today's quote…</h4>
+            <h4 id="quote-text" aria-live="polite"><%= quote.quote %></h4>
 
         </article>
 
         <aside class="quote---author">
 
-            <h4 id="quote-author" aria-live="polite"></h4>
+            <h4 id="quote-author" aria-live="polite"><%= quote.author %></h4>
 
         </aside>
 
