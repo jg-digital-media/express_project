@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `30/04/2026 - 14:37`
+Last Update `30/04/2026 - 16:58`
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -35,6 +35,7 @@ Last Update `30/04/2026 - 14:37`
 + `TODO: COMPLETED: 30-04-2026` Introduce View Templates for all routes
 + `TODO: COMPLETED: 30-04-2026` Serve CSS stylesheet
 + `TODO: ` Add layout templates
++ `TODO: ` Get and display current date dynamically with PHP
 + `TODO: ` ejs - page variables for individual page titles
 + `TODO: ` Page variable "Daily Quote App" for home route `/index.ejs`
 + `TODO: ` Page variable "Quotes List" for browse route `/browse.ejs`
@@ -42,6 +43,7 @@ Last Update `30/04/2026 - 14:37`
 + `TODO: ` Page variable "View Quote" for quote route `/quote.ejs`
 
 + `TODO:` Deploy Project to Render https://render.com/
++ `TODO:` Get public URL
 
 [Back to top](#content-menu)
 
@@ -148,29 +150,33 @@ Last Update `30/04/2026 - 14:37`
 ##### Rendering Templates - `Notes to be updated`
 
 ```javascript
+
 // Tell Express to use EJS as the view engine
 app.set("view engine", "ejs");
 
-res.render("index") → loads index.ejs //  - rather than sending things it retrieve them
+// loads index.ejs rather than sending things it retrieves them from render templates
+res.render("index")  
 
-{ quote: random } → sends data into the template
+// e.g. → sends data into a template
+{ quote: random } 
 // <%= %> → outputs data into HTML
 
 // Serve CSS - 
 app.use(express.static("public"))
 
-// normal file paths fail in frontend (Express.js)
+// Note: normal file paths fail in frontend (Express.js). 
+// So file paths may need to be changed,
 
-So it needs a project root.
-
-renders quote file on a specific route to retrieve api. 
+// Creates a data route to access data
+const quotes = require("./data/quotes.json");
 
 app.get("/api/quotes", (req, res) => {
 
     res.json(quotes);
 });
 
-
+// And then this would go in your front end script file.
+const QUOTES_DATA_URL = "/api/quotes";
 
 + `Prompts`
 
