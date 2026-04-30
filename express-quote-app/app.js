@@ -42,8 +42,14 @@ app.get("/browse/:id", (req, res) => {
 
 });
 
+
+app.get("/api/quotes", (req, res) => {
+  res.json(quotes);
+});
+
 app.get("/about", (req, res) => {
 
     res.render("about");
 
 });
+
