@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `30/04/2026 - 11:24`
+Last Update `30/04/2026 - 14:23`
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -32,7 +32,16 @@ Last Update `30/04/2026 - 11:24`
 + `TODO: COMPLETED: 30-04-2026` Get a random quote on the home root `/`
 + `TODO: COMPLETED: 30-04-2026` Show all quotes on browse route `/browse`
 + `TODO: COMPLETED: 30-04-2026` Dynamic route for individual quote pages `/browse/:id`
-+ Introduce View Templates for all routes
++ `TODO: COMPLETED: 30-04-2026` Introduce View Templates for all routes
++ `TODO: COMPLETED: 30-04-2026` Serve CSS stylesheet
++ `TODO:` Add layout templates
++ ejs - page variables for individual page titles
++ Page variable "Daily Quote App" for home route `/index.ejs`
++ Page variable "Quotes List" for browse route `/browse.ejs`
++ Page variable "View Quote" for about route  `/about.ejs`
++ Page variable "View Quote" for quote route `/quote.ejs`
+
++ Deploy Project to Render https://render.com/
 
 [Back to top](#content-menu)
 
@@ -135,6 +144,33 @@ Last Update `30/04/2026 - 11:24`
 
     });
 ```
+
+##### Rendering Templates - `Notes to be updated`
+
+```javascript
+// Tell Express to use EJS as the view engine
+app.set("view engine", "ejs");
+
+res.render("index") → loads index.ejs //  - rather than sending things it retrieve them
+
+{ quote: random } → sends data into the template
+// <%= %> → outputs data into HTML
+
+// Serve CSS - 
+app.use(express.static("public"))
+
+// normal file paths fail in frontend (Express.js)
+
+So it needs a project root.
+
+renders quote file on a specific route to retrieve api. 
+
+app.get("/api/quotes", (req, res) => {
+
+    res.json(quotes);
+});
+
+
 
 + `Prompts`
 
