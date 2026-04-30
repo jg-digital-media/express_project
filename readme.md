@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `30/04/2026 - 14:23`
+Last Update `30/04/2026 - 14:37`
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -10,7 +10,7 @@ Last Update `30/04/2026 - 14:23`
 
 ### Todos
 
-#### Tasks `13` Completed `9` 
+#### Tasks `22` Completed `11` 
 
 ##### Front End
 [Back to top](#content-menu)
@@ -34,14 +34,14 @@ Last Update `30/04/2026 - 14:23`
 + `TODO: COMPLETED: 30-04-2026` Dynamic route for individual quote pages `/browse/:id`
 + `TODO: COMPLETED: 30-04-2026` Introduce View Templates for all routes
 + `TODO: COMPLETED: 30-04-2026` Serve CSS stylesheet
-+ `TODO:` Add layout templates
-+ ejs - page variables for individual page titles
-+ Page variable "Daily Quote App" for home route `/index.ejs`
-+ Page variable "Quotes List" for browse route `/browse.ejs`
-+ Page variable "View Quote" for about route  `/about.ejs`
-+ Page variable "View Quote" for quote route `/quote.ejs`
++ `TODO: ` Add layout templates
++ `TODO: ` ejs - page variables for individual page titles
++ `TODO: ` Page variable "Daily Quote App" for home route `/index.ejs`
++ `TODO: ` Page variable "Quotes List" for browse route `/browse.ejs`
++ `TODO: ` Page variable "View Quote" for about route  `/about.ejs`
++ `TODO: ` Page variable "View Quote" for quote route `/quote.ejs`
 
-+ Deploy Project to Render https://render.com/
++ `TODO:` Deploy Project to Render https://render.com/
 
 [Back to top](#content-menu)
 
@@ -223,6 +223,12 @@ Express Project Setup - to appear here
 
 ### Log
 [Back to top](#content-menu)
+
+#### `v3`
+
++ Serve CSS file from Express.js
++ Serve JavaScript and quotes data from Express.js
++ Render Views from Express.js - EJS Templating
 
 #### `v2`
 
