@@ -1,0 +1,525 @@
+// CONFIG
+
+$colour---main--url: #5959ff;
+
+$colour---primary: #000000;
+$colour---second: #cbcbfa;
+$colour---third: #f6f935;
+$colour---fourth: #9df190;
+
+$background---header: #000000;
+$background---nav--url: $colour---third;
+$colour---header: $colour---third;
+
+$colour---nav--url: #575757;
+$colour---footer--url: green;
+
+// FONT STACK
+$font---one: Arial, Helvetica, sans-serif;
+$font---two: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$font---main: $font---two;
+
+// font size
+
+$font---size--xl: 32px;
+$font---size--l: 24px;
+
+$font---size--lg: 20px;
+$font---size--md: 14px;
+$font---size--sm: 10px;
+
+$breakpoint---md: 680px;
+
+// Reset padding and margin values
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+/* main stylesheet */
+body {
+
+    // font stack
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* font-family: $font---main; */
+    font-family: 'Noto Sans', sans-serif;
+
+    background: $colour---fourth;
+
+    header {
+
+        background: $background---header;
+        color: $colour---header;
+        padding: 3pt 0;
+        border-bottom: $colour---third solid 3px;
+
+        div.website---titles {
+
+            text-align: center;
+
+            h1 {
+
+                font-size: $font---size--xl;
+                margin: 8px 0 0 0;
+            }
+
+            h2 {
+
+                /* font-size: 24px; */
+                font-size: $font---size--sm;
+
+                span.app---version {
+
+                    /* color: $colour---header; */    
+                    margin: 0 15px;
+                    font-size: 11px;
+                    color: #fde644;
+
+                    a {
+
+                        color: #fde644;
+                        text-decoration: none;
+
+                        transition: color .3s;
+
+                        &:hover {
+
+                            color: darken(#fde644, 18%);
+                        }
+                    }
+                }
+            }
+
+        }    
+
+        nav {
+
+            text-align: right;
+
+            a {
+
+                display: inline-block;
+                /* background: none; */
+                /* background: #b3b3b3; */
+                background: $background---nav--url;
+                color: $colour---nav--url;
+                padding: 8px;
+                border-radius: 8px;
+                margin: 6px 10px;
+                font-size: $font---size--md;
+                text-decoration: none;
+                box-shadow: 0 0 10px 3px black;
+                border: solid 1px black;
+
+                transition: color .3s, box-shadow .3s, border .3s;
+                
+                &:hover {
+
+                    color: darken($colour---nav--url, 15%);
+                    /* box-shadow: 0 0 12px $colour---nav--url; */
+                    box-shadow: 0 0 10px 3px #ffe635;
+                    border: solid 1px #b8a303;
+                }
+            }
+        }
+    }
+
+    main {
+
+        /* background: #9df190; */
+        background: $colour---fourth;
+
+        // index.php
+        .quote---container {
+
+            display: block;
+            border: solid #a3a3a3 1px;
+            background: #8dffa5;
+            border-radius: 8px;
+            /* width: 80%; */
+            width: 320px;
+            min-height: 145px;
+            height: auto;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 6% auto 0 auto;
+            padding: 3%;
+
+            h3 {
+
+                font-size: 20px;
+                font-size: $font---size--md;
+                border-bottom: solid red 3px;
+            }
+
+            h4 {
+
+                font-size: 14px;
+                /* font-size: $font---size--sm; */
+                font-style: italic;
+
+                margin: 18px auto;
+            }
+        }
+
+        .quote---author {
+
+            display: block;
+            margin: 13px auto;
+            text-align: center;
+
+            h4 {
+
+                font-size: 17px;
+
+            }
+        }
+
+        .new---quote {
+
+            display: block;
+            background: #8dffa5;
+            color: $colour---main--url;
+            color: green;
+            margin: 25px auto;
+            text-align: center;
+            width: 150px;
+            padding: 5px;
+            height: auto;
+            border: solid gray 1px;
+
+            text-decoration: none;
+            font-size: 16px;
+
+            transition: color .3s;
+
+            &:hover {
+
+                color: darken($colour---main--url, 10%);
+                color: black;
+            }
+            
+        }
+
+        // all
+        p {
+
+            font-size: 16px;
+
+            a {
+
+                color: $colour---main--url;
+
+                transition: color .3s;
+                
+                &:hover {
+
+                    color: darken($colour---main--url, 10%);
+                }
+            }
+        }
+
+        // browse.php
+        .quote---list--container {
+
+            /* width: auto; */            
+            /* width: 342px; */
+            width: 480px;
+            font-size: 14px;
+            margin: 15px auto;
+            padding: 47px 0;
+            height: 280px;
+            overflow-y: overlay;
+
+            @media screen and (max-width: $breakpoint---md) {
+
+                width: 84%;
+            }
+
+            &::-webkit-scrollbar {
+
+                content: "webkit--scrollbar";
+                // border: solid 1px red;
+                /* background: #25c74b; */
+                background: radial-gradient(circle at center, #25c74b, #019f25);
+                width: auto;
+                border-radius: 8px;
+                box-shadow: none;
+            }
+
+            &::-webkit-scrollbar-button {
+
+                content: "webkit--scrollbar-button";
+                /* border: solid 1px red; */
+                background: radial-gradient(circle at center, #25c74b, #057b20);
+                cursor: pointer;
+                border-radius: 50%;
+
+                &:last-child {
+
+                    border-radius: 50% 0 0 50%;
+                }
+            }
+
+            &::-webkit-scrollbar-corner {
+
+                content: "webkit--scrollbar-corner";
+            }
+
+            &::-webkit-scrollbar-track {
+
+                content: "webkit--scrollbar-track";
+                /* border: solid 1px red; */
+                /* background: #00851f; */
+            }
+
+            
+            &::-webkit-scrollbar-thumb {
+
+                content: "webkit--scrollbar-thumb";
+                /* border: solid 1px red; */
+                background: #019122;
+                cursor: pointer;
+                border-radius: 10px;
+
+                transition: border 3s, background .3s;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+
+                content: "webkit--scrollbar-thumb:hover";
+                background: #007d1d;
+                transition: border 3s, background .3s;
+                /* border: solid 1px red; */
+            }
+            
+            h3 {
+
+                text-align: center;
+            }
+
+            .quote---list--item {
+
+                /* background: #ffffff; */
+                /* background: #e0ffae;   */
+                background: darken($colour---fourth, 5%);
+                background: #8dffa5;
+                margin: 30px 10px;
+                padding: 10px 20px;
+                min-height: 75px;
+                height: auto;
+                border: solid #a3a3a3 1px;  
+                border-radius: 8px;
+                
+
+                transition: background .3s, border .3s;
+
+                &:hover {
+
+                    background: #c7c7c7;
+                    background: darken(#8dffa5, 5%);
+                    border: solid #a3a3a3 1px; 
+                    border: solid #069e39 1px;   
+                    border-radius: 8px;
+                }
+                
+
+                h3 {
+
+                    color: $colour---primary;
+                }
+
+                p {
+
+                    font-size: 16px;
+                    color: $colour---primary;
+                }
+
+                a {
+
+                    color: $colour---main--url;
+
+                    transition: color .3s;
+                    
+                    &:hover {
+
+                        color: darken($colour---main--url, 10%);
+                    }
+                }                
+
+                .quote---view--more {
+
+                    display: inline-block;
+                    margin: 10px auto;
+                    text-align: center;
+                    color: green;
+                    
+
+                    transition: color .3s;
+                    
+                    &:hover {
+
+                        /* color: darken($colour---main--url, 10%); */
+                        color: darken(green, 10%);
+                    }
+                } 
+
+            }
+
+        }
+
+        // about.php
+        .about---daily--quoteapp_container {
+
+            display: block;
+            margin: 14px auto;
+            width: 320px; 
+            display: block; 
+            border: solid #a3a3a3 1px;
+            background: #8dffa5;
+            border-radius: 8px;
+            /* width: 80%; */
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 6% auto 0 auto;
+            padding: 3%;
+            margin: 25px auto;
+
+            h3 {
+
+                color: $colour---primary;
+                font-size: $font---size--lg;
+                margin: 15px auto;
+                text-align: center;
+
+
+            }
+
+            p {
+
+                color: $colour---primary;
+                line-height: 1.5;
+                font-size: $font---size--md; // font-size: 14px
+                margin-bottom: 15px;
+
+                a {
+
+                    color: $colour---main--url;
+
+                    transition: color .3s;
+                    
+                    &:hover {
+
+                        color: darken($colour---main--url, 10%);
+                    }
+                }
+            }
+        }
+
+        // view quote
+        .view--quote_container {
+
+            display: block;
+            margin: 25px auto;
+            width: 320px;
+            border: solid #a3a3a3 1px;
+            background: #8dffa5;
+            border-radius: 8px;
+            /* width: 80%; */
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 6% auto 0 auto;
+            padding: 3%;
+
+            h3 {
+
+                text-align: center;
+                border-bottom: solid red 3px;
+            }
+
+            .quote---view {
+
+                /* border: solid #a3a3a3 1px; */
+                padding: 10px;
+                margin: 10px auto;
+                text-align: center;
+
+                h4 {
+
+                }
+
+                p {
+
+                    font-style: italic;
+                    font-weight: bold;
+
+                }
+
+                a {
+
+                    color: green;
+                }
+            }
+
+            .quote---view--more {
+
+                a {
+                    display: block;
+                    background: #8dffa5;
+                    color: #5959ff;
+                    color: green;
+                    margin: 25px auto;
+                    text-align: center;
+                    width: 150px;
+                    padding: 5px;
+                    height: auto;
+                    border: solid gray 1px;
+                    text-decoration: none;
+                    font-size: 16px;
+
+                    transition: color .3s;
+
+                    &:hover {
+
+                        color: darken($colour---main--url, 10%);
+                        color: black;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+
+        height: 40px;
+        padding-top: 15px;
+        background: $colour---fourth;
+        text-align: center;
+        font-size: $font---size--sm;
+
+        p { 
+
+            color: $colour---primary;
+
+            a {
+
+                color: $colour---footer--url;
+
+                transition: color .3s;
+                
+                &:hover {
+
+                    color: darken($colour---footer--url, 10%);
+                }
+            }
+        }
+    }
+}

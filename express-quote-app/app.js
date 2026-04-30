@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
 
+// use EJS as the view engine
+app.set("view engine", "ejs");
+
+// serve css
+app.use(express.static("public"))
+
 // load data file
 const quotes = require("./data/quotes.json");
 
@@ -15,26 +21,13 @@ app.get("/", (req, res) => {
   
     const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-    res.send(`
-        <h1>Daily Quote</h1>
-        <blockquote>${random.quote}</blockquote>
-        <p>- ${random.author}</p>
-        <a href="/browse">Browse Quotes</a>
-    `);
+    res.render("index", { quote: random });
 
 });
 
 app.get("/browse", (req, res) => {
 
-  let html = "<h1>All Quotes</h1>";
-
-  quotes.forEach(q => {
-    html += `<p><a href="/browse/${q.id}">${q.quote}</a></p>`;
-  });
-
-  html += `<a href="/">Back</a>`;
-
-  res.send(html);
+   res.render("browse", { quotes});
 
 });
 
@@ -45,11 +38,12 @@ app.get("/browse/:id", (req, res) => {
     return res.send("Quote not found");
   }
 
-  res.send(`
-    <h1>Quote</h1>
-    <blockquote>${quote.quote}</blockquote>
-    <p>- ${quote.author}</p>
-    <a href="/browse">Back</a>
-  `);
+    res.render("quote", { quote });
+
+});
+
+app.get("/about", (req, res) => {
+
+    res.render("about");
 
 });

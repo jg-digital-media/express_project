@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* main stylesheet */
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* font-family: $font---main; */
+  font-family: "Noto Sans", sans-serif;
+  background: #9df190;
+}
+body header {
+  background: #000000;
+  color: #f6f935;
+  padding: 3pt 0;
+  border-bottom: #f6f935 solid 3px;
+}
+body header div.website---titles {
+  text-align: center;
+}
+body header div.website---titles h1 {
+  font-size: 32px;
+  margin: 8px 0 0 0;
+}
+body header div.website---titles h2 {
+  /* font-size: 24px; */
+  font-size: 10px;
+}
+body header div.website---titles h2 span.app---version {
+  /* color: $colour---header; */
+  margin: 0 15px;
+  font-size: 11px;
+  color: #fde644;
+}
+body header div.website---titles h2 span.app---version a {
+  color: #fde644;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body header div.website---titles h2 span.app---version a:hover {
+  color: #e3c702;
+}
+body header nav {
+  text-align: right;
+}
+body header nav a {
+  display: inline-block;
+  /* background: none; */
+  /* background: #b3b3b3; */
+  background: #f6f935;
+  color: #575757;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 6px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 0 10px 3px black;
+  border: solid 1px black;
+  transition: color 0.3s, box-shadow 0.3s, border 0.3s;
+}
+body header nav a:hover {
+  color: #313131;
+  /* box-shadow: 0 0 12px $colour---nav--url; */
+  box-shadow: 0 0 10px 3px #ffe635;
+  border: solid 1px #b8a303;
+}
+body main {
+  /* background: #9df190; */
+  background: #9df190;
+}
+body main .quote---container {
+  display: block;
+  border: solid #a3a3a3 1px;
+  background: #8dffa5;
+  border-radius: 8px;
+  /* width: 80%; */
+  width: 320px;
+  min-height: 145px;
+  height: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 6% auto 0 auto;
+  padding: 3%;
+}
+body main .quote---container h3 {
+  font-size: 20px;
+  font-size: 14px;
+  border-bottom: solid red 3px;
+}
+body main .quote---container h4 {
+  font-size: 14px;
+  /* font-size: $font---size--sm; */
+  font-style: italic;
+  margin: 18px auto;
+}
+body main .quote---author {
+  display: block;
+  margin: 13px auto;
+  text-align: center;
+}
+body main .quote---author h4 {
+  font-size: 17px;
+}
+body main .new---quote {
+  display: block;
+  background: #8dffa5;
+  color: #5959ff;
+  color: green;
+  margin: 25px auto;
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  height: auto;
+  border: solid gray 1px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+body main .new---quote:hover {
+  color: #2626ff;
+  color: black;
+}
+body main p {
+  font-size: 16px;
+}
+body main p a {
+  color: #5959ff;
+  transition: color 0.3s;
+}
+body main p a:hover {
+  color: #2626ff;
+}
+body main .quote---list--container {
+  /* width: auto; */
+  /* width: 342px; */
+  width: 480px;
+  font-size: 14px;
+  margin: 15px auto;
+  padding: 47px 0;
+  height: 280px;
+  overflow-y: overlay;
+}
+@media screen and (max-width: 680px) {
+  body main .quote---list--container {
+    width: 84%;
+  }
+}
+body main .quote---list--container::-webkit-scrollbar {
+  content: "webkit--scrollbar";
+  /* background: #25c74b; */
+  background: radial-gradient(circle at center, #25c74b, #019f25);
+  width: auto;
+  border-radius: 8px;
+  box-shadow: none;
+}
+body main .quote---list--container::-webkit-scrollbar-button {
+  content: "webkit--scrollbar-button";
+  /* border: solid 1px red; */
+  background: radial-gradient(circle at center, #25c74b, #057b20);
+  cursor: pointer;
+  border-radius: 50%;
+}
+body main .quote---list--container::-webkit-scrollbar-button:last-child {
+  border-radius: 50% 0 0 50%;
+}
+body main .quote---list--container::-webkit-scrollbar-corner {
+  content: "webkit--scrollbar-corner";
+}
+body main .quote---list--container::-webkit-scrollbar-track {
+  content: "webkit--scrollbar-track";
+  /* border: solid 1px red; */
+  /* background: #00851f; */
+}
+body main .quote---list--container::-webkit-scrollbar-thumb {
+  content: "webkit--scrollbar-thumb";
+  /* border: solid 1px red; */
+  background: #019122;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: border 3s, background 0.3s;
+}
+body main .quote---list--container::-webkit-scrollbar-thumb:hover {
+  content: "webkit--scrollbar-thumb:hover";
+  background: #007d1d;
+  transition: border 3s, background 0.3s;
+  /* border: solid 1px red; */
+}
+body main .quote---list--container h3 {
+  text-align: center;
+}
+body main .quote---list--container .quote---list--item {
+  /* background: #ffffff; */
+  /* background: #e0ffae;   */
+  background: #89ee79;
+  background: #8dffa5;
+  margin: 30px 10px;
+  padding: 10px 20px;
+  min-height: 75px;
+  height: auto;
+  border: solid #a3a3a3 1px;
+  border-radius: 8px;
+  transition: background 0.3s, border 0.3s;
+}
+body main .quote---list--container .quote---list--item:hover {
+  background: #c7c7c7;
+  background: #74ff91;
+  border: solid #a3a3a3 1px;
+  border: solid #069e39 1px;
+  border-radius: 8px;
+}
+body main .quote---list--container .quote---list--item h3 {
+  color: #000000;
+}
+body main .quote---list--container .quote---list--item p {
+  font-size: 16px;
+  color: #000000;
+}
+body main .quote---list--container .quote---list--item a {
+  color: #5959ff;
+  transition: color 0.3s;
+}
+body main .quote---list--container .quote---list--item a:hover {
+  color: #2626ff;
+}
+body main .quote---list--container .quote---list--item .quote---view--more {
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  color: green;
+  transition: color 0.3s;
+}
+body main .quote---list--container .quote---list--item .quote---view--more:hover {
+  /* color: darken($colour---main--url, 10%); */
+  color: #004d00;
+}
+body main .about---daily--quoteapp_container {
+  display: block;
+  margin: 14px auto;
+  width: 320px;
+  display: block;
+  border: solid #a3a3a3 1px;
+  background: #8dffa5;
+  border-radius: 8px;
+  /* width: 80%; */
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 6% auto 0 auto;
+  padding: 3%;
+  margin: 25px auto;
+}
+body main .about---daily--quoteapp_container h3 {
+  color: #000000;
+  font-size: 20px;
+  margin: 15px auto;
+  text-align: center;
+}
+body main .about---daily--quoteapp_container p {
+  color: #000000;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+body main .about---daily--quoteapp_container p a {
+  color: #5959ff;
+  transition: color 0.3s;
+}
+body main .about---daily--quoteapp_container p a:hover {
+  color: #2626ff;
+}
+body main .view--quote_container {
+  display: block;
+  margin: 25px auto;
+  width: 320px;
+  border: solid #a3a3a3 1px;
+  background: #8dffa5;
+  border-radius: 8px;
+  /* width: 80%; */
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 6% auto 0 auto;
+  padding: 3%;
+}
+body main .view--quote_container h3 {
+  text-align: center;
+  border-bottom: solid red 3px;
+}
+body main .view--quote_container .quote---view {
+  /* border: solid #a3a3a3 1px; */
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+body main .view--quote_container .quote---view p {
+  font-style: italic;
+  font-weight: bold;
+}
+body main .view--quote_container .quote---view a {
+  color: green;
+}
+body main .view--quote_container .quote---view--more a {
+  display: block;
+  background: #8dffa5;
+  color: #5959ff;
+  color: green;
+  margin: 25px auto;
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  height: auto;
+  border: solid gray 1px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+body main .view--quote_container .quote---view--more a:hover {
+  color: #2626ff;
+  color: black;
+}
+body footer {
+  height: 40px;
+  padding-top: 15px;
+  background: #9df190;
+  text-align: center;
+  font-size: 10px;
+}
+body footer p {
+  color: #000000;
+}
+body footer p a {
+  color: green;
+  transition: color 0.3s;
+}
+body footer p a:hover {
+  color: #004d00;
+}
+
+/*# sourceMappingURL=style.css.map */
