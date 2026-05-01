@@ -16,6 +16,14 @@ app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
 });
 
+
+app.use((req, res, next) => {
+  res.locals.siteName = "Daily Quote App";
+  res.locals.currentPath = req.path;
+  next();
+});
+
+
 // Test a route with app.get
 app.get("/", (req, res) => {
   
@@ -24,6 +32,9 @@ app.get("/", (req, res) => {
     res.render("index", { quote: random, pageTitle: "Daily Quote App " });
 
 });
+
+
+
 
 app.get("/browse", (req, res) => {
 
