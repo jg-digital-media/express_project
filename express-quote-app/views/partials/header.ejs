@@ -10,3 +10,24 @@
     <title><%= pageTitle || "Daily Quote App" %>| An Express.js Project by JGDM</title>
 
 </head>
+
+<body>
+
+    <header>
+
+        <div class="website---titles">
+
+            <h1>Daily Quote App</h1>
+            <h2><em>An Express.js Project <span class="app---version"><a href="https://github.com/jg-digital-media/express_project" target="_blank">v3</a></span> </em></h2>
+
+        </div>
+
+        <nav>
+            
+            <a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">Home</a>
+            <a href="/browse" class="<%= currentPath.startsWith('/browse') ? 'active' : '' %>">Browse</a>
+            <a href="/about" class="<%= currentPath === '/about' ? 'active' : '' %>">About</a>
+
+        </nav>
+
+    </header>
