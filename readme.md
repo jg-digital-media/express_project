@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `30/04/2026 - 16:58`
+Last Update `01/05/2026 - 12:54`
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -10,18 +10,18 @@ Last Update `30/04/2026 - 16:58`
 
 ### Todos
 
-#### Tasks `22` Completed `11` 
+#### Tasks `25` Completed `18` 
 
 ##### Front End
 [Back to top](#content-menu)
 
 + `TODO: COMPLETED: 27-04-2026` Plan UI by a wireframe
 + `TODO: COMPLETED: 29-04-2026` Build static HTML fles
-  + `TODO: ` Add copy for about app page `/about.php`
+  + `TODO: COMPLETED: 01-05-2026` Add copy for about app page `/about.php`
   + `TODO: ` Add reload button to restore the current daily Quote.
   
++ `TODO: COMPLETED: 01-05-2026` Create a new local Node.js environment
 + `TODO: ` Get and display current date dynamically with PHP
-+ `TODO: ` Create a new local Node.js environment
 
 ##### Express.js
 
@@ -34,13 +34,14 @@ Last Update `30/04/2026 - 16:58`
 + `TODO: COMPLETED: 30-04-2026` Dynamic route for individual quote pages `/browse/:id`
 + `TODO: COMPLETED: 30-04-2026` Introduce View Templates for all routes
 + `TODO: COMPLETED: 30-04-2026` Serve CSS stylesheet
-+ `TODO: ` Add layout templates
++ `TODO: COMPLETED: 01-05-2026` Add layout templates
++ `TODO: COMPLETED: 01-05-2026` Page variable "Daily Quote App" for home route `/index.ejs`
++ `TODO: COMPLETED: 01-05-2026` Page variable "Quotes List" for browse route `/browse.ejs`
++ `TODO: COMPLETED: 01-05-2026` Page variable "View Quote" for about route  `/about.ejs`
++ `TODO: COMPLETED: 01-05-2026` Page variable "View Quote" for quote route `/quote.ejs`
 + `TODO: ` Get and display current date dynamically with PHP
++ `TODO: ` fix link to return to browse route. - `/browse/:id`
 + `TODO: ` ejs - page variables for individual page titles
-+ `TODO: ` Page variable "Daily Quote App" for home route `/index.ejs`
-+ `TODO: ` Page variable "Quotes List" for browse route `/browse.ejs`
-+ `TODO: ` Page variable "View Quote" for about route  `/about.ejs`
-+ `TODO: ` Page variable "View Quote" for quote route `/quote.ejs`
 
 + `TODO:` Deploy Project to Render https://render.com/
 + `TODO:` Get public URL
@@ -229,6 +230,11 @@ Express Project Setup - to appear here
 
 ### Log
 [Back to top](#content-menu)
+
+#### `v4`
+
++ Implement .ejs Layourt partials
++ Implement navigation highlighting
 
 #### `v3`
 
