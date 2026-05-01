@@ -1,6 +1,6 @@
 # Express Project - Daily Quote App
 
-Last Update `01/05/2026 - 12:54`
+Last Update `01/05/2026 - 13:07
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
 
@@ -148,7 +148,7 @@ Last Update `01/05/2026 - 12:54`
     });
 ```
 
-##### Rendering Templates - `Notes to be updated`
+#### Rendering Templates - `Notes to be updated`
 
 ```javascript
 
@@ -178,6 +178,69 @@ app.get("/api/quotes", (req, res) => {
 
 // And then this would go in your front end script file.
 const QUOTES_DATA_URL = "/api/quotes";
+```
+
+##### Layout Templates and Rendering
+
+
+```javascript
+
+    app.get("/browse", (req, res) => {
+
+        res.render("browse", { 
+        
+            quotes,
+            pageTitle: "Browse Quotes List "
+
+        });
+
+    });
+```
+
+```html
+
+
+    <title><%= pageTitle || "Daily Quote App" %>| An Express.js Project by JGDM</title>
+```
+
+##### Navigation Highlighting
+
+```html
+
+<!--Include partial templats to avoid repeating HTML  (DRY Code) -->
+
+ <%- include("partials/header") %>
+
+    <main>
+
+        . . . 
+
+    </main>
+
+<%- include("partials/footer") %>
+```
+
+```javascript
+
+// use a middleware route to set the current path
+app.use((req, res, next) => {
+  res.locals.siteName = "Daily Quote App";
+  res.locals.currentPath = req.path;
+  next();
+});
+```
+
+```html
+
+<!-- implmement a navigation highlight systm -->
+<nav>
+            
+    <a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">Home</a>
+    <a href="/browse" class="<%= currentPath.startsWith('/browse') ? 'active' : '' %>">Browse</a>
+    <a href="/about" class="<%= currentPath === '/about' ? 'active' : '' %>">About</a>
+
+</nav>
+```
 
 + `Prompts`
 
