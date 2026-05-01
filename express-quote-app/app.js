@@ -21,35 +21,41 @@ app.get("/", (req, res) => {
   
     const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-    res.render("index", { quote: random });
+    res.render("index", { quote: random, pageTitle: "Daily Quote App " });
 
 });
 
 app.get("/browse", (req, res) => {
 
-   res.render("browse", { quotes});
+    res.render("browse", { 
+    
+        quotes,
+        pageTitle: "Browse Quotes List "
+
+    });
 
 });
 
 app.get("/browse/:id", (req, res) => {
-  const quote = quotes.find(q => q.id == req.params.id);
 
-  if (!quote) {
-    return res.send("Quote not found");
-  }
+    const quote = quotes.find(q => q.id == req.params.id);
 
-    res.render("quote", { quote });
+    if (!quote) {
+        return res.send("Quote not found");
+    }
+
+    res.render("quote", { quote, pageTitle: "View Quote " });
 
 });
 
 
 app.get("/api/quotes", (req, res) => {
-  res.json(quotes);
+
+    res.json(quotes);
 });
 
 app.get("/about", (req, res) => {
 
-    res.render("about");
-
+    res.render("about", { pageTitle: "About "} );
 });
 
