@@ -66,6 +66,12 @@ body header nav a:hover {
   box-shadow: 0 0 10px 3px #ffe635;
   border: solid 1px #b8a303;
 }
+body header nav a.active {
+  color: #313131;
+  /* box-shadow: 0 0 12px $colour---nav--url; */
+  box-shadow: 0 0 10px 3px #ffe635;
+  border: solid 1px #b8a303;
+}
 body main {
   /* background: #9df190; */
   background: #9df190;

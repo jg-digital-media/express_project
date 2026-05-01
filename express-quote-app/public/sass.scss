@@ -123,6 +123,14 @@ body {
                     box-shadow: 0 0 10px 3px #ffe635;
                     border: solid 1px #b8a303;
                 }
+
+                &.active {
+
+                    color: darken($colour---nav--url, 15%);
+                    /* box-shadow: 0 0 12px $colour---nav--url; */
+                    box-shadow: 0 0 10px 3px #ffe635;
+                    border: solid 1px #b8a303;
+                }
             }
         }
     }
