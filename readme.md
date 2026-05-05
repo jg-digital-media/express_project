@@ -1,8 +1,10 @@
 # Express Project - Daily Quote App
 
-Last Update `01/05/2026 - 13:07
+Last Update `05/05/2026 - 11:17
 
 + This is a daily quote app built with `Express.js` and `Node.js`. It requires both to be installed on your local machine. Use `npm install` in your CLI/Terminal to install the dependencies.
+
++ [Express Project - Daily Quote App](https://express-project-cbtk.onrender.com/)
 
 ## Content Menu
 
@@ -10,7 +12,7 @@ Last Update `01/05/2026 - 13:07
 
 ### Todos
 
-#### Tasks `25` Completed `18` 
+#### Tasks `25` Completed `21` 
 
 ##### Front End
 [Back to top](#content-menu)
@@ -39,12 +41,12 @@ Last Update `01/05/2026 - 13:07
 + `TODO: COMPLETED: 01-05-2026` Page variable "Quotes List" for browse route `/browse.ejs`
 + `TODO: COMPLETED: 01-05-2026` Page variable "View Quote" for about route  `/about.ejs`
 + `TODO: COMPLETED: 01-05-2026` Page variable "View Quote" for quote route `/quote.ejs`
++ `TODO: COMPLETED: 05-05-2026 ` fix link to return to browse route. - `/browse/:id`
++ `TODO: COMPLETED: 05-05-2026` Deploy Project to Render https://render.com/
++ `TODO: COMPLETED: 05-05-2026` Get public URL - https://express-project-cbtk.onrender.com/
 + `TODO: ` Get and display current date dynamically with PHP
-+ `TODO: ` fix link to return to browse route. - `/browse/:id`
 + `TODO: ` ejs - page variables for individual page titles
 
-+ `TODO:` Deploy Project to Render https://render.com/
-+ `TODO:` Get public URL
 
 [Back to top](#content-menu)
 
@@ -57,11 +59,22 @@ Last Update `01/05/2026 - 13:07
 ### Notes
 [Back to Top](#)
 
-+ `Overview`
+#### `Overview`
 
   + This application is a simple Daily Quote Application created in `Express.js`. It calculates a number based on today’s date (essentially how many days have passed since a fixed point in time), then uses that number to consistently pick the same quote for that specific day; displaying this quote on the homepage.
 
   + We then have a button that will select a random quote and replace the "daily" quote until the page is reloaded.  The "Browse" page will display a list of all the quotes as retrieved dynamically from the JSON file.
+
+#### Installing Express
+
++ Ensure you have Node.js installed
+
++ Navigate to your project root directory
+
++ `npm init`
+
++ `npm install express`
+
 
 + `Code`
 
@@ -262,15 +275,55 @@ app.use((req, res, next) => {
 
 ```
 
-#### Installing Express
+##### Deploying to Render
 
-+ Ensure you have Node.js installed
++ Some notes on deploying to Render - [Render.com](https://render.com/)
 
-+ Navigate to your project root directory
+```
+git remote get-url origin 
+https://github.com/jg-digital-media/express_project
 
-+ `npm init`
+Settings:
+Environment: Node
 
-+ `npm install express`
+Build Command:
+
+npm install
+
+Start Command:
+
+npm start
+./public
+
+
+
+log 
+==> Downloading cache...
+Menu
+==> Cloning from https://github.com/jg-digital-media/express_project
+==> Checking out commit 09f8cc0c5f82516e5e82c83c6aad41080927d378 in branch main
+==> Root directory "express-quote-app" does not exist. Verify the Root Directory configured in your service settings.
+
+
+Root Directory express_project/express-quote-app
+
+
+express_project
+  > express-quote-app  (project root directory)
+    > data
+    > node_modules
+    > public
+    > views 
+    .env 
+   .gitignore
+   .app.js
+   .package-lock.json
+   .package.json
+  
+
+
+https://express-project-cbtk.onrender.com/
+```
 
 
 ....
@@ -293,6 +346,11 @@ Express Project Setup - to appear here
 
 ### Log
 [Back to top](#content-menu)
+
+#### `v5`
+
++ Implemented a public URL - available at https://express-project-cbtk.onrender.com/
++ Added a test route to check and debug errors with deployment.,
 
 #### `v4`
 
