@@ -7,13 +7,22 @@ app.set("view engine", "ejs");
 // serve css
 app.use(express.static("public"))
 
+// prepare for deployment with Render
+const PORT = process.env.PORT || 3000;
+
 // load data file
 const quotes = require("./data/quotes.json");
 
 // Start server
-app.listen(3000, () => {
+/* app.listen(3000, () => {
 
   console.log("Server running on http://localhost:3000");
+});
+ */
+
+app.listen(PORT, () => {
+
+  console.log(`Server running on port ${PORT}`);
 });
 
 
